@@ -1,0 +1,52 @@
+System Health Report - 2026-02-16 17:53:08
+Host: wordpress
+User: vagrant
+Service to check: nginx
+------------------------------------------------------------
+UPTIME:
+ 17:53:08 up 4 days,  4:07,  1 user,  load average: 0.07, 0.10, 0.08
+------------------------------------------------------------
+CPU LOAD (1m, 5m, 15m):
+0.07 0.10 0.08 1/187 60926
+------------------------------------------------------------
+MEMORY:
+              total        used        free      shared  buff/cache   available
+Mem:          1.5Gi       516Mi       172Mi       3.0Mi       840Mi       849Mi
+Swap:            0B          0B          0B
+------------------------------------------------------------
+DISK USAGE:
+Filesystem      Size  Used Avail Use% Mounted on
+udev            748M     0  748M   0% /dev
+tmpfs           153M  1.1M  152M   1% /run
+/dev/sda1        39G  2.8G   36G   8% /
+tmpfs           765M     0  765M   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           765M     0  765M   0% /sys/fs/cgroup
+/dev/loop0       64M   64M     0 100% /snap/core20/2599
+/dev/loop2       51M   51M     0 100% /snap/snapd/24671
+/dev/loop1       92M   92M     0 100% /snap/lxd/32662
+/dev/loop3       49M   49M     0 100% /snap/snapd/25935
+/dev/loop4       64M   64M     0 100% /snap/core20/2686
+/dev/loop5       92M   92M     0 100% /snap/lxd/36554
+tmpfs           153M     0  153M   0% /run/user/1000
+------------------------------------------------------------
+TOP 5 PROCESSES BY CPU:
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         354 10.8  3.1 125888 48556 ?        S<s  Feb12 653:33 /lib/systemd/systemd-journald
+root           1  8.5  0.8 253352 12840 ?        Ss   Feb12 514:48 /sbin/init
+mysql        953  0.7 24.1 1793672 377680 ?      Ssl  Feb12  47:26 /usr/sbin/mysqld
+root         741  0.5  0.5 241068  9140 ?        Ssl  Feb12  30:07 /usr/lib/accountsservice/accounts-daemon
+root       60326  0.3  0.0      0     0 ?        I    17:36   0:03 [kworker/0:1-events]
+------------------------------------------------------------
+TOP 5 PROCESSES BY MEMORY:
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+mysql        953  0.7 24.1 1793672 377680 ?      Ssl  Feb12  47:26 /usr/sbin/mysqld
+root         354 10.8  3.1 125888 48556 ?        S<s  Feb12 653:33 /lib/systemd/systemd-journald
+root       57647  0.0  2.1 1849652 33696 ?       Ssl  16:47   0:03 /usr/lib/snapd/snapd
+root         902  0.0  1.5 230400 24400 ?        Ss   Feb12   0:23 /usr/sbin/apache2 -k start
+root         502  0.0  1.1 411452 18404 ?        SLsl Feb12   4:41 /sbin/multipathd -d -s
+------------------------------------------------------------
+SERVICE STATUS (nginx):
+2026-02-16 17:53:08 - nginx is NOT running ❌
+Tip: start it with: sudo systemctl start nginx
+------------------------------------------------------------
